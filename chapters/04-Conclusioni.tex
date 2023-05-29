@@ -1,0 +1,23 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+\sloppy
+
+\section{Conclusioni}%\label{sec:Conclusioni}
+\vspace{1.0cm}
+Inizialmente, SeismoCloud era un progetto volto a dare solo un \emph{early warning} nel caso si fosse verificato un terremoto; tuttavia, eventi recenti come il terremoto che ha colpito la Turchia e la Siria in data 6 febbraio 2023, hanno evidenziato il problema della ricerca e il soccorso dei superstiti, motivo per cui è nata l'idea di offrire i dati collezionati dai dispositivi ai soccorsi. Nel corso del lavoro, l’idea ha iniziato a prendere forma, utilizzando un modello di \emph{machine learning} in grado di riconoscere la presenza umana e catalogarla tramite audio; infatti, attraverso l'audio raccolto dal microfono dei dispositivi è possibile eseguire la rilevazione con risultati attendibili.\newline
+Durante lo sviluppo embrionale del sistema, è stato necessario sincronizzarsi con gli altri membri del team per comprendere come far comunicare client e server, e viceversa; successivamente ognuno ha proseguito in autonomia lo sviluppo del proprio aspetto. \newline
+L'obiettivo del mio lavoro è stata la progettazione e implementazione del sistema lato backend per gestire la \say{\emph{human presence detection}}, predisporre API per far comunicare il client con il server, creare un servizio per gestire, tramite notifiche, le comunicazioni del server con i client interessati ed infine progettare e implementare il database e le query per salvare e raccogliere dati. Il risultato è stato un prodotto efficiente e mantenibile, integrabile con il resto del sistema, che si presta ad essere il nuovo punto di partenza del progetto SeismoCloud.
+
+\subsection{Sviluppi futuri}
+Il sistema \say{\emph{post earthquake human presence detection}} è il nuovo punto di partenza che da vita nuova al progetto SeismoCloud. Infatti gli sviluppi futuri dell'applicazione e del sistema sono infiniti, tuttavia ne possiamo elencare alcuni:
+\begin{itemize}
+    \item Possibile collaborazione con il Corpo Nazionale dei Vigili del Fuoco per offrire i dati raccolti aiutando i soccorsi
+    \item Utilizzo di un modello machine learning, per ascoltare l'ambiente circostante e catalogare il livello di pericolo in cui si potrebbe trovare una persona
+    \item Ampliare il modello BNS attuale per quantificare le persone attraverso le voci
+    \item Recuperare la posizione di un dispositivi in tempo reale solo nel momento in cui il dispositivo è in movimento
+    \item Capire se un dispositivo si trova in un edificio che ha subito un collasso totale, parziale o nullo attraverso i dati raccolti all'avvenire di un terremoto
+\end{itemize}
+
+
+\end{document}
